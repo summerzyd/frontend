@@ -1,9 +1,21 @@
+body {
+    overflow-y: hidden;
+}
 .ivu-form-item {
     float: left;
     margin-top: 20px;
+    margin-bottom: 0px;
 }
 .ivu-btn, .ivu-btn:active, .ivu-btn:focus {
     float: left;
     margin-left: 10px;
     margin-top: 20px;
+}
+.ivu-btn-primary {
+    color: #fff;
+    background-color: #81a7d9;
+    border-color: #81a7d9;
+}
+.ivu-input-40 {
+    height: 40px;
 }
