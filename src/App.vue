@@ -20,4 +20,11 @@ export default {
   width: 100%;
   height: 100%;
 }
+body {
+  overflow-y: hidden;
+}
+   .ivu-input-40 {
+        height: 40px;
+    }
+    
 </style>

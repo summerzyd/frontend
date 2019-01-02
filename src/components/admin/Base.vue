@@ -1,8 +1,12 @@
 <template>
     <div class="layout">
         <Layout :style="{minHeight: '100vh'}">
-            <Sider ref="side1" hide-trigger collapsible :collapsed-width="78" v-model="isCollapsed">
+            <Sider ref="side1" hide-trigger collapsible :collapsed-width="78" v-model="isCollapsed" style="width: 220px; min-width: 200px; max-width: 220px; flex: 0 0 220px;">
                 <div class="menu_icon_a">
+                    <router-link to="/home">
+                        <img src="../../../src/assets/img/logob.png" style="width:40px; height:30px; vertical-align: middle;"> 
+                        <span>客服工单系统</span>
+                    </router-link>
                 </div>
                 <Menu active-name="1-2" theme="dark" width="auto" :class="menuitemClasses">
                     <MenuItem name="1-1">
@@ -31,7 +35,9 @@
             </Sider>
             <Layout>
                <Header :style="{padding: 0}" class="layout-header-bar">
-                    <Icon @click.native="collapsedSider" :class="rotateIcon" :style="{margin: '0 20px'}" type="md-menu" size="24"></Icon>
+                    <div style="margin: 0 6px; width:100px"> 
+                        <Icon @click.native="collapsedSider" :class="rotateIcon" style="margin-left:10px" type="md-menu" size="24"></Icon>
+                    </div>
                 </Header>
                 <Content :style="{margin: '20px', background: '#fff', minHeight: '260px'}">
                    <router-view></router-view>
@@ -89,7 +95,14 @@
         transition: all .3s;
     }
     .menu_icon_a {
-        height: 50px;
+        height: 100px;
+        padding: 24px 24px;
+        left: 70px;
+        line-height: 44px;
+        color: rgba(255, 255, 255, 1);
+        font-size: 20px;
+        text-align: center;
+        font-family: HiraginoSansGB-W6;
     }
     .rotate-icon{
         transform: rotate(-90deg);

@@ -12,6 +12,7 @@
   "dependencies": {
     "ajv": "^6.6.2",
     "axios": "^0.18.0",
+    "echarts": "^4.2.0-rc.2",
     "iview": "^3.2.0",
     "js-base64": "^2.5.0",
     "jsencrypt": "^3.0.0-rc.1",

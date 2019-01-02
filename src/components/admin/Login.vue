@@ -1,7 +1,7 @@
 <template>
     <div class="login">
         <div class="login-form">
-            <p>
+            <p class="login-form-title">
                 <img src="../../../src/assets/img/logo.png" class="login-form-img"/>
                 客服工单管理系统
             </p>
@@ -124,7 +124,8 @@ GAevx0tHH+B9aQfk4jL7/epFb7LpG1FiDgbH7P9CobxKwcf3owYWkyinhoYayzfuaH9eitappHwE
     .login-form-img{
         width: 46px;
         height: 33px;
-        padding-left: 10px;
+        padding-top: 10px;
+        margin-right: 20px;
     }
     .ivu-input{
         height: 40px;
@@ -140,5 +141,8 @@ GAevx0tHH+B9aQfk4jL7/epFb7LpG1FiDgbH7P9CobxKwcf3owYWkyinhoYayzfuaH9eitappHwE
     }
     .ivu-input-group {
         height: 40px;
+    }
+    .login-form-title {
+        font-size: 28px;
     }
 </style>
