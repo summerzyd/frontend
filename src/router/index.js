@@ -11,6 +11,12 @@ import Store from '@/components/admin/Store'
 import Login from '@/components/admin/Login'
 import Tabledit from '@/components/admin/Tabledit'
 import Vtable from '@/components/admin/Vtable'
+import LineChart from '@/components/chart/LineChart'
+import Line2 from '@/components/chart/Line2'
+import Line3 from '@/components/chart/Line3'
+import China from '@/components/chart/China'
+import World from '@/components/chart/World'
+import Bmap from '@/components/chart/Bmap'
 import VueResource from 'vue-resource'
 
 Vue.use(Router)
@@ -32,6 +38,12 @@ export default new Router({
         { path: '/store', component: Store, name: 'store' },
         { path: '/tabledit', component: Tabledit, name: 'tabledit' },
         { path: '/vtable', component: Vtable, name: 'vtable' },
+        { path: '/lineChart', component: LineChart, name: 'LineChart' },
+        { path: '/line2', component: Line2, name: 'Line2' },
+        { path: '/line3', component: Line3, name: 'Line3' },
+        { path: '/china', component: China, name: 'china' },
+        { path: '/world', component: World, name: 'world' },
+        { path: '/bmap', component: Bmap, name: 'bmap' },
       ]
     },
     { path: '/login', component: Login, name: 'login' },
